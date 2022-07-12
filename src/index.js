@@ -15,6 +15,7 @@ const server = new ApolloServer({
       uid,
     };
   },
+  cors: ["https://federationgateway.herokuapp.com"],
 });
 const { env } = process;
 
