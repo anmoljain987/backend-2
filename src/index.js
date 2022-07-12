@@ -10,12 +10,6 @@ const server = new ApolloServer({
   plugins: [ApolloServerPluginInlineTraceDisabled()],
   context: async ({ req }) => {
     const uid = req.headers["x-uid"];
-    // const email = req.headers["x-email"];
-
-    // let _user = await UserModel.findOne({ uid: uid });
-    // if (!_user) {
-    //   UserModel.create({ uid, email });
-    // }
 
     return {
       uid,

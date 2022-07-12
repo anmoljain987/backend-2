@@ -6,9 +6,6 @@ export const resolvers = {
 
       return res;
     },
-    // findUser: async (_, {}, { uid }) => {
-    //   const res = await Detail.find({ uid });
-    // },
   },
   Mutation: {
     createDetails: async (_, { name, phoneNumber, age }, { uid, email }) => {
